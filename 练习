@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>唐诗三百首</title>
+		<style type="text/css">
+			.a {
+				color: red;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>	
+		<h1 class="a">江雪</h1>
+		<h2 class="a">(唐)·柳宗元</h2>
+		<p class="a">千山鸟飞绝，</p>
+		<p class="a">万径人踪灭。</p>
+		<p class="a">孤舟蓑笠翁，</p>
+		<p class="a">独钓寒江雪。</p>
+	</body>
+</html>
