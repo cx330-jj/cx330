@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		.demo{
+			width: 400px;
+			height: 200px;
+			border: 3px solid pink;
+			text-align: center;
+			display: inline-block;
+			margin-top: 300px;
+			margin-bottom: 300px;
+			color: #FFC0CB;
+		}
+		body{
+			text-align: center;
+			background-image: url(img/1.jpg);
+		}
+	</style>
+	</head>
+	<body>
+		
+		<div class="demo">
+			<div id="app">
+				<h4>请猜测1-100以内的数字</h4>
+			<input type="text"  v-model="b"/>
+			<p v-if="msg>b">憨批，猜小了吧！！！</p>
+			<p v-if="msg<b">傻缺，猜大了！！！</p>
+			<p v-if="msg==b">厉害啊，猜对了！！！</p>
+				</div>
+			
+				<script type="text/javascript">
+					var vm=new Vue({
+						el:'#app',
+						data:{
+							
+							msg:Math.floor(Math.random()*100),
+							b:null
+						}
+					})
+				</script>
+		</div>
+		
+	</body>
+</html>
