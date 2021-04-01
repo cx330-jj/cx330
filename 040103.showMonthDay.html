@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="background-image: url(img/1.jpg);">
+
+		<div id="app" style="text-align: center;">
+			请输入月份：
+			<input type="text" v-model="num" />
+			<p v-if="num==1">天数为31天！<br> </p>
+			<p v-if="num==3">天数为31天！<br> </p>
+			<p v-if="num==5">天数为31天！<br> </p>
+			<p v-if="num==7">天数为31天！<br> </p>
+			<p v-if="num==8">天数为31天！<br> </p>
+			<p v-if="num==10">天数为31天！<br> </p>
+			<p v-if="num==12">天数为31天！<br> </p>
+			<p v-if="num==4">天数为30天！<br> </p>
+			<p v-if="num==6">天数为30天！<br> </p>
+			<p v-if="num==9">天数为30天！<br> </p>
+			<p v-if="num==11">天数为30天！<br> </p>
+			<p v-if="num==2">天数为29天！<br> </p>
+		<script type="text/javascript">
+			var v=new Vue({
+				el:'#app',
+				data:{
+					num:'null'
+				}
+			})
+		</script>
+	</body>
+</html>
